@@ -47,6 +47,8 @@ import SignUp from "layouts/authentication/sign-up";
 import Course from "layouts/courses";
 // @mui icons
 import Icon from "@mui/material/Icon";
+import Statistical from "layouts/admin/statistical";
+import AccountManagement from "layouts/admin/accountManagement";
 
 const routes = [
   {
@@ -120,6 +122,22 @@ const routes = [
     icon: <Icon fontSize="small">assignment</Icon>,
     route: "/authentication/sign-up",
     component: <SignUp />,
+  },
+  {
+    type: "collapse",
+    name: "statistical",
+    key: "statistical",
+    icon: <Icon fontSize="small">statistical</Icon>,
+    route: "/statistical",
+    component: <Statistical />,
+  },
+  {
+    type: "collapse",
+    name: "accountManagement",
+    key: "accountManagement",
+    icon: <Icon fontSize="small">account management</Icon>,
+    route: "/accountManagement",
+    component: <AccountManagement />,
   },
 ];
 
